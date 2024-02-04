@@ -77,7 +77,7 @@
             session_start();
         }
         
-        $token = $_SESSION['token'];
+        $token = !empty($_SESSION['token']) ? $_SESSION['token'] : 0;
         
         $array_post = array(
             'token' => $token,
