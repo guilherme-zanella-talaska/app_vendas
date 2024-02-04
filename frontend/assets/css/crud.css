@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #0069b4;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+}
+
+.navbar a {
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+}
+
+.navbar a.title {
+    font-size: 20px;
+    font-weight: bold;
+    width: 80%;
+    text-align: left;
+}
+
+.navbar a.right {
+    margin-left: 8px;
+    border-radius: 50px;
+}
+
+.navbar a.right:first-child {
+    margin-left: 0;
+}
+
+.navbar a.right:hover {
+    background-color: #ddd;
+    color: #0069b4;
+}
+
+#filtro_text{
+    width: 200px;
+    margin-left: 20px;
+    color: #fff;
+}
+
+.top-modal{
+    font-size: 25px !important;
+    font-weight: bold !important;
+    color: #fff
+}
+
+.top{
+    text-align:center;
+    background-color:#0069b4;
+    margin-bottom: 20px;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]){
+    border-bottom: 1px solid #0069b4 !important;
+    box-shadow: 0 1px 0 0 #0069b4 !important;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]) + label{
+    color: #0069b4 !important;
+}
+
+.modal-content{
+    overflow-y: auto !important;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a.title, .navbar a.right {
+        width: 100%;
+        box-sizing: border-box;
+        margin-left: 0;
+    }
+
+    .navbar a.title {
+        text-align: center;
+    }
+
+    .modal {
+        width: 100vw !important;
+        height: 100vh !important;
+        margin: 0 !important;
+    }
+    
+    
+}
+
+#dataTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#dataTable th, #dataTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#dataTable th {
+    background-color: #f2f2f2;
+}
+
+#dataTable tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#dataTable tbody tr:hover {
+    background-color: #d9d9d9;
+}

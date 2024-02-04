@@ -1,0 +1,138 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.navbar {
+    background-color: #0069b4;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 20px 16px;
+}
+
+.navbar a {
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+}
+
+.navbar a.title {
+    font-size: 20px;
+    font-weight: bold;
+    width: 30%;
+    border-radius:20px;
+    text-align: left;
+}
+
+.container {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.product-container, .cart-container {
+    background-color: #fff;
+    padding-bottom: 2%;
+    padding-top: 5%;
+    overflow-y: auto !important;
+    display: block !important;
+    max-height: 400px !important;
+
+}
+
+.add-to-cart-btn {
+    display: inline-block;
+    padding: 8px;
+    border-radius: 50%;
+    width: 40px;
+    background-color: #0069b4;
+    color: #fff;
+    cursor: pointer;
+}
+
+table {
+    border-width: 1px;
+    border-color: #aaa;
+    overflow-x: auto;
+}
+
+th, td {
+    text-align: left;
+    padding: 10px;
+}
+
+th {
+    background-color: #0069b4;
+    color: white;
+}
+
+.footer {
+    text-align: center;
+    width: 100%;
+}
+
+.top-modal{
+    font-size: 25px !important;
+    font-weight: bold !important;
+    color: #fff
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]) {
+    border-bottom: 1px solid #0069b4 !important;
+    box-shadow: 0 1px 0 0 #0069b4 !important;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]) + label {
+    color: #0069b4 !important;
+}
+
+.material-icons, prefix {
+    color: #0069b4 !important;
+}
+
+.nav_title{
+    border-color: #000;
+    background-color: #0069b4;
+    padding: 10px;
+    box-shadow: 1px 1px 12px #b1b0b0;
+}
+
+.title_div_vendas{
+    font-weight:bold;
+    text-align:center;
+    font-size:20px;
+    color:#0069b4;
+}
+
+.divider_footer{
+    border-color: #000;
+    background-color: #0069b4;
+    padding:1px;
+    box-shadow: 1px 1px 12px #b1b0b0;
+    padding:10px;
+}
+
+.title_footer{
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    font-size:20px;
+}
+
+.top{
+    text-align:center;
+    background-color:#0069b4;
+    margin-bottom: 20px;
+}
+
+.title:hover{
+    background-color: #fff;
+    color:hsl(205, 100%, 35%);
+    transition: 1s;
+}

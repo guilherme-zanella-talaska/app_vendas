@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #ededed;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: #f8f9f9;
+    box-shadow: 0px 0px 2px #727272;
+    border-radius: 20px;
+    margin: 20px;
+    width: 460px;
+    text-align: center;
+    animation: slideDown 0.5s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.login-container h2 {
+    color: #333;
+}
+
+.login-form {
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    margin-left: -10 !important;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+    text-align: left;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-group img {
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.form-group button {
+    background-color: #0069B4;
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 200px;
+}
+
+.form-group button:hover {
+    background-color: #4caf50;
+}
+
+.end_text{
+    color: #9b9b9b;
+    font-weight: bold;
+}
+
+#btn_voltar:hover{
+    background-color: red;
+}
+
+.title-form{
+    font-weight: bold;
+    font-size: 26px;
+    color: #fff;
+    margin-bottom:10px !important;
+}
+
+.title-screen{
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.login-top {
+    background-color: #0069b4; /* Cor de fundo desejada */
+    color: #fff; /* Cor do texto desejada */
+    padding: 20px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin-bottom: 20px;
+}
+
+
+.input-field .prefix.active {
+    color: #0069b4 !important;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]){
+    border-bottom: 1px solid #0069b4 !important;
+    box-shadow: 0 1px 0 0 #0069b4 !important;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]) + label{
+    color: #0069b4 !important;
+}
+
